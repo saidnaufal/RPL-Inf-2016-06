@@ -75,11 +75,11 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #18bc9c;
-    background-color: aliceblue;
+    background: #fff;
 }
 
 header .container {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -103,7 +103,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 150px;
+        padding-top: 200px;
         padding-bottom: 100px;
     }
 
@@ -188,7 +188,8 @@ section.success a.active {
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;   
+        padding: 75px 0;
+        
     }
 
     section.first {
@@ -199,6 +200,7 @@ section.success a.active {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    background-color: aqua;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -250,7 +252,6 @@ section.success a.active {
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
-        
     }
 }
 
