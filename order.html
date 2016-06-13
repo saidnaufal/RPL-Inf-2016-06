@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>eL-300</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">eL-300</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#page-top">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Order Tiket</a>
+                    </li>
+                    <li class="page-scroll" id="myBtn">
+                        <a href="#myModal">Petugas Loket</a>
+                    </li>
+                    <li class="page-scroll" id="myBtn1">
+                        <a href="#myModal" >Supir</a>
+                    </li>
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Konsumen<b class="caret"></b></a>  
+                        <ul class="dropdown-menu">
+                            <li><a href="#modalCetak" id="btnCetak">Cetak Tiket</a></li>
+                            <li><a href="#modalBatal" id="btnBatal">Batalkan Tiket</a></li>
+                        </ul>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-18">
+                    <div class="intro-text">
+                    <img class="img-circle" src="img/unduhan.png" width="200" height="200" alt=""><br><br>
+                        <span class="name">eL-300</span>
+                        <hr class="star-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Portfolio Grid Section -->
+    <!-- Order Tiket-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Order Your Ticket</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <br><br>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cv">Pilih CV</label>
+                    <label class="radio-inline col-md-offset-0"><input type="radio" name="optradio" required>CV Niagara</label>       
+                    <label class="radio-inline "><input type="radio" name="optradio" required>CV Buana</label>
+                    <label class="radio-inline "><input type="radio" name="optradio" required>CV Bahagia</label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="asal">Kota Asal</label>
+                    <div class="col-sm-5">
+                        <select name="tujuan" class="form-control" required>
+                        <option value="medan">Pilih</option>
+                        <option value="medan">Medan</option>
+                        <option value="sigli">Sigli</option>
+                        <option value="bernun">Bereuneun</option>
+                        <option value="lhok">Lhokseumawe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tujuan">Kota Tujuan</label>
+                    <div class="col-sm-5">
+                        <select name="tujuan" class="form-control" required>
+                        <option value="medan">Pilih</option>
+                        <option value="medan">Medan</option>
+                        <option value="sigli">Sigli</option>
+                        <option value="bernun">Bereuneun</option>
+                        <option value="lhok">Lhokseumawe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tanggal">Tanggal</label>
+                    <div class="col-sm-5">
+                        <input type="date" class="form-control" id="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tanggal">Jam</label>
+                    <div class="col-sm-5">
+                        <select name="jam" class="form-control" required>
+                        <option value="1">--:--</option>
+                        <option value="1">08:00</option>
+                        <option value="2">10:00</option>
+                        <option value="3">14:00</option>
+                        <option value="4">16:00</option>
+                        <option value="5">20:00</option>
+                        <option value="6">21:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tanggal">Nomor Kursi</label>
+                    <div class="col-sm-5">
+                        <select name="jam" class="form-control" required>
+                        <option value="1">Pilih</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="6">7</option>
+                        <option value="6">8</option>
+                        <option value="6">9</option>
+                        <option value="6">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tanggal">Nama</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="tanggal">Nomor Hp</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <center><a href="order-sukses.html" input class="btn btn-primary btn-lg"  type="submit">Order</a></center>
+                </div>
+            </form>    
+        </div>
+    </section>
+    
+    
+    <!-- Modal untuk login petugas loket-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4><span class="glyphicon glyphicon-lock"></span>Login</h4></center>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    <a href="data.html" class="btn btn-info" id="batal">Log In</a>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+    
+    
+    <!-- Modal untuk login supir-->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+                        
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4><span class="glyphicon glyphicon-lock"></span>Login</h4></center>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                            <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    <a href="data-supir.html" class="btn btn-info" id="batal">Log In</a>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+    
+    
+    <!-- Modal untuk verfikasi id cetak tiket-->
+    <div class="modal fade" id="modalCetak" role="dialog">
+        <div class="modal-dialog">
+                        
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4><span class="glyphicon glyphicon-lock"></span>Login</h4></center>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Masukkan Id</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter Id">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    <a href="cetak.html" class="btn btn-info" id="batal">Log In</a>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+    
+    <!-- Modal untuk verfikasi id batal tiket-->
+    <div class="modal fade" id="modalBatal" role="dialog">
+        <div class="modal-dialog">
+                        
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center><h4><span class="glyphicon glyphicon-lock"></span>Login</h4></center>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Masukkan Id</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter Id">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    <a href="batal.html" class="btn btn-info" id="batal">Log In</a>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2>About Us</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="text-center">Kami adalah mahasiswa/mahasiswi dari Universitas Syiah Kuala Fakultas MIPA Jurusan Informatika. Di pertemukan dalam sebuah kelompok beranggotakan 5 orang pada mata kuliah Rekayasa Perangkat Lunak.</p>
+                </div>
+                
+                <div class="col-lg-4 col-lg-offset-2 text-left"><br><br>
+                        <h4 style="color:black">Apa yang Kami lakukan?</h4>
+                            <p>Kami mengerjakan project Pemesanan Tiket L300 berbasis Web sebagai final dari mata kuliah ini.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-0"><br><br>
+                        <h4 style="color:black">Pelayanan Kami?</h4>
+                            <p>Mempermudah masyarakat dalam Pemesananan Tiket L300 dan bisa langsung melakukan pembayaran via ATM setelah melakukan pemesanan.</p>
+                </div>
+               
+                <div class="col-lg-8 col-lg-offset-5"><br><br><br><br>
+                    <h4 style="color:black">Meet Our Team</h4>
+                </div>
+                            
+                <div class="col-md-4 col-md-offset-3">          
+                    <img src="img/yeni.jpg" class="img-circle" height="200" width="200" />
+                    <p style="margin-left:40px">Yeni H Saragih </p><br>
+                </div>                    
+                   
+                <div class="col-md-4 col-md-offset-0">
+                    <img src="img2/ryp.jpg" class="img-circle" height="200" width="200" />    
+                    <p style="margin-left:35px">Riska Yulia Putri</p><br>    
+                </div>
+                
+                <div class="col-md-4 col-md-offset-3">    
+                    <img src="img/da.jpg" class="img-circle" height="200" width="200" />
+                    <p style="margin-left:5px">Dicky Ardian Naswir</p><br> 
+                </div>
+                    
+                <div class="col-md-4 col-md-offset-0">    
+                    <img src="img2/rf.jpg" class="img-circle" height="200" width="200" />
+                    <p style="margin-left:50px">Rizal Fahmi</p><br>
+                </div>
+                
+                <div class="col-md-6 col-md-offset-5">    
+                    <img src="img2/snh.jpg" class="img-circle" height="200" width="200" />
+                    <p style="margin-left:55px">Said Naufal</p><br>
+                </div>             
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; RPL-2016-06
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <!--Script untuk Modal login petugas loket dan supir-->
+    <!--myBtn dan myModal untuk petugas loket-->
+    <!--myBtn1 dan myModal1 untuk supir-->
+    
+    <script>
+        
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+        
+        $("#myBtn1").click(function(){
+            $("#myModal1").modal();
+        });
+        
+        $("#btnCetak").click(function(){
+            $("#modalCetak").modal();
+        });
+        
+        $("#btnBatal").click(function(){
+            $("#modalBatal").modal();
+        });
+        
+    </script>
+    
+</body>
+
+</html>
